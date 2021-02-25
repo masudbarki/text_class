@@ -7,8 +7,8 @@ def index():
 
 @app.route("/predict", methods=['POST'])
 def predict():
-    # get data
-    if request.method == 'POST':
-		    message = request.form['message']
-		    data = [message]
-    return message
+  if request.method == 'POST':
+    message = request.form['message']
+    data = [message]
+  return message
+
